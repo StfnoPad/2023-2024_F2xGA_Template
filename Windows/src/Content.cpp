@@ -100,12 +100,12 @@ void Content::BindMesh(map<int, GLuint> &vbos, Model &model, Mesh &mesh)
 		if (model.textures.size() > 0)
 		{
 			// fixme: Use material's baseColor
-			Texture &tex = model.textures[0];
+			tex = model.textures[0];
 
 			if (tex.source > -1)
 			{
 
-				GLuint texid;
+				//GLuint texid;
 				glGenTextures(1, &texid);
 
 				tinygltf::Image &image = model.images[tex.source];

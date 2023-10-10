@@ -19,6 +19,8 @@ class Content {
 
 		pair<GLuint, std::map<int, GLuint>> vaoAndEbos;
 		Model model;
+		Texture tex;
+		GLuint texid;
 
 		void LoadGLTF(string filename);
 		void DrawModel(const pair<GLuint, map<int, GLuint>> &vaoAndEbos, Model &model);
